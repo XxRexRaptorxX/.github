@@ -1,8 +1,9 @@
-```yaml
+
 name: Bug Report
 description: Report a bug or unexpected behavior in the mod.
 title: "[Bug]: "
-labels: ["bug"]
+labels:
+  - bug
 
 body:
   - type: markdown
@@ -96,4 +97,3 @@ body:
       description: |
         Add screenshots, videos, modpack information, or anything else
         that might help investigate the issue.
-```
