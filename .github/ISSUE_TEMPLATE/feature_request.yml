@@ -1,4 +1,4 @@
-```yaml
+
 name: Feature Request
 description: Suggest a new feature or improvement for the mod.
 title: "[Feature Request]: "
@@ -64,4 +64,3 @@ body:
         Add screenshots, videos, examples, mockups, or any other information
         that could help explain your idea.
       placeholder: Add any additional information here.
-```
