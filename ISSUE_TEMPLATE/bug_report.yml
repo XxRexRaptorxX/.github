@@ -1,0 +1,99 @@
+```yaml
+name: Bug Report
+description: Report a bug or unexpected behavior in the mod.
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, please read the following guide:
+        [How to report an issue correctly](https://github.com/XxRexRaptorxX/General/blob/main/how_to_report_an_issue_correctly.md)
+
+        Please provide as much information as possible. Incomplete reports may be closed if they cannot be investigated.
+
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft Version
+      description: Which Minecraft version are you using?
+      placeholder: "e.g. 1.21.1"
+    validations:
+      required: true
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version
+      description: Which version of the mod are you using?
+      placeholder: "e.g. 1.2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_loader
+    attributes:
+      label: Mod Loader
+      description: Which mod loader are you using?
+      options:
+        - NeoForge
+        - Forge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: loader_version
+    attributes:
+      label: Mod Loader Version
+      description: Which version of your mod loader are you using?
+      placeholder: "e.g. 21.1.200"
+
+  - type: input
+    id: launcher
+    attributes:
+      label: Launcher
+      description: Which launcher are you using?
+      placeholder: "e.g. Official Minecraft Launcher, Prism Launcher, Modrinth App, CurseForge"
+
+  - type: textarea
+    id: additional_mods
+    attributes:
+      label: Additional Installed Mods (Optional)
+      description: |
+        List any additional mods you have installed besides this mod.
+        Including their versions can help identify compatibility issues.
+      placeholder: |
+        - Mod A: 1.2.0
+        - Mod B: 3.4.1
+        - Mod C: 2.0.0
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: Problem Description
+      description: Describe the problem in as much detail as possible.
+      placeholder: What happened? When does the problem occur?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and Crash Reports
+      description: |
+        Please provide relevant logs or crash reports.
+        You can upload them to https://mclo.gs/ and paste the link here.
+      placeholder: Paste your log or crash report link here.
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: |
+        Add screenshots, videos, modpack information, or anything else
+        that might help investigate the issue.
+```
