@@ -1,0 +1,67 @@
+```yaml
+name: Feature Request
+description: Suggest a new feature or improvement for the mod.
+title: "[Feature Request]: "
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting a feature request, please check if a similar request already exists.
+
+        Please submit one feature request per issue and describe your idea as clearly as possible.
+
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft Version
+      description: Which Minecraft version should this feature target?
+      placeholder: "e.g. 1.21.1"
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you would like to see added.
+      placeholder: Describe your idea in as much detail as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Use Case
+      description: |
+        What problem would this feature solve?
+        Is there a specific situation where this feature would be useful?
+      placeholder: Explain why this feature would be useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: |
+        How would you like this feature to work?
+        Describe your ideal implementation or behavior.
+      placeholder: Describe how you imagine this feature working.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: |
+        Have you considered any alternative solutions or workarounds?
+      placeholder: Describe any alternatives you have considered.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Information
+      description: |
+        Add screenshots, videos, examples, mockups, or any other information
+        that could help explain your idea.
+      placeholder: Add any additional information here.
+```
